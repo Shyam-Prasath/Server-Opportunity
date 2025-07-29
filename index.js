@@ -9,7 +9,6 @@ dotenv.config();
 const Resume = require('./models/Resume');
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 app.use(express.json());
 
 const resumeRoutes = require('./routes/resume');
